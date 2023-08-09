@@ -120,11 +120,11 @@ p {
     line-height: 24px;
     font-weight: 100;
 }
-.item-wrapper {
+.image {
     background-image: url("./assets/images/pngtree-water-conservation-environmental-protection-poster-background-material-picture-image_1096192.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-
 
 /*Media Queries*/
 @media screen and (min-width: 768px){
