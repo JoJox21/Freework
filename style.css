@@ -97,6 +97,7 @@ a {
     
 /*This is the title of the page*/
 .title-banner{
+    position: relative;
     background-color: teal;
     color: white;
     padding-top: 20px;
@@ -110,20 +111,37 @@ a {
 }
 
 h2 {
+    position: relative;
     font-size: 20px;
     font-weight: 500;
     margin-top: 50px;
 }
 
 p {
+    position: relative;
     font-size: 16px;
     line-height: 24px;
     font-weight: 100;
 }
+
 .image {
-    background-image: url("./assets/images/pngtree-water-conservation-environmental-protection-poster-background-material-picture-image_1096192.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.image::before {    
+      content: "";
+      background-image: url('./assets/images/pngtree-water-conservation-environmental-protection-poster-background-material-picture-image_1096192.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.6;
 }
 
 /*Media Queries*/
